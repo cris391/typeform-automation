@@ -1,14 +1,11 @@
-//post-run: run iMacros Internet Explorer on Windows
+// post-run: execute iMacros for Internet Explorer on Windows
 
 var fs = require('fs');
 var Typeform = require('typeform-node-api');
-var credentials = require('./credentials.json');
-console.log(credentials.firstName);
-
-var typeform_api = new Typeform('');
+const credentials = require('./credentials.json')
+var typeform_api = new Typeform(credentials.key);
 
 let formIds = [];
-
 // get form ids from api
 typeform_api.getForms(function (data) {
   data.forEach(form => {
@@ -32,6 +29,7 @@ function writeScript() {
   TAG POS=3 TYPE=DIV ATTR=TXT:Download
   ONDOWNLOAD FOLDER = C:\\Users\\UT17\\Downloads\\responses FILE=* WAIT=YES\n`
       stream.write(code);
+
     });
     // let after = 'SET !ERRORIGNORE NO';
     // stream.write(after);

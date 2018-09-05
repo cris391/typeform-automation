@@ -1,0 +1,15 @@
+{
+  "name": "typeformapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node writeScript.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typeform-node-api": "^1.0.3"
+  }
+}
