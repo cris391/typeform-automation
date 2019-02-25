@@ -1,3 +1,4 @@
 credentials.json
 
 .history
+/node_modules

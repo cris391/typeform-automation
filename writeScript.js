@@ -11,7 +11,7 @@ typeform_api.getForms(function (data) {
   data.forEach(form => {
     formIds.push(form.id);
   });
-  writeScript()
+  writeScript();
 });
 
 function writeScript() {

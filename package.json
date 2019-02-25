@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@typeform/api-client": "^1.3.0",
+    "request": "^2.88.0",
     "typeform-node-api": "^1.0.3"
   }
 }
